@@ -2,87 +2,88 @@
 
 Benvenuti nella repository ufficiale del corso di **Informatica** per la classe terza (Indirizzo Informatica e Telecomunicazioni). 
 
-Questo spazio funge da **manuale dinamico**, **raccolta di esempi pratici** e **guida agli esercizi** svolti durante l'anno scolastico. Qui troverete tutto il materiale teorico e il codice sorgente scritto in **C++**.
+Questo spazio funge da **manuale dinamico**, **raccolta di esempi pratici** e **guida agli esercizi** svolti durante l'anno scolastico. Tutti gli esempi e i codici sorgente sono scritti in **C++** e testati per l'ambiente di laboratorio.
 
 ---
 
 ## 📌 Indice dei Contenuti
 
-1. [🛠️ Strumenti e Requisiti](#️-strumenti-e-requisiti)
-2. [🗺️ Programma Didattico](#️-programma-didattico)
-3. [📂 Struttura della Repository](#-struttura-della-repository)
-4. [🚀 Linee Guida per il Codice (Style Guide)](#-linee-guida-per-il-codice-style-guide)
-5. [📚 Risorse e Documentazione](#-risorse-e-documentazione)
+1. [🛠️ Ambiente di Sviluppo (IDE)](#️-ambiente-di-sviluppo-ide)
+2. [📖 Manuale e Documentazione di Riferimento](#-manuale-e-documentazione-di-riferimento)
+3. [🗺️ Programma Didattico](#️-programma-didattico)
+4. [📂 Struttura della Repository](#-struttura-della-repository)
+5. [🚀 Regole di Scrittura del Codice](#-regole-di-scrittura-del-codice)
 
 ---
 
-## 🛠️ Strumenti e Requisiti
+## 🛠️ Ambiente di Sviluppo (IDE)
 
-Per seguire il corso e completare i laboratori verranno utilizzati i seguenti strumenti:
+In laboratorio e a casa utilizzeremo **Dev-C++** come ambiente di sviluppo integrato (IDE) di riferimento.
 
-* **Linguaggio di Programmazione:** C++ (Standard ISO C++17 / C++20)
-* **IDE Consigliati:** 
-  * [Visual Studio Code](https://code.visualstudio.com/) (con estensioni *C/C++* e *Code Runner*)
-  * [CLion](https://www.jetbrains.com/clion/) (Licenza Education)
-  * [Dev-C++](https://sourceforge.net/projects/orwelldevcpp/) (per configurazioni rapide)
-* **Compilatore:** `GCC` / `MinGW` (su Windows) o `Clang` (su macOS/Linux)
-* **Controllo Versione:** Git & GitHub
+* **IDE Ufficiale:** Dev-C++ (Embarcadero release o Orwell Dev-C++)
+* **Compilatore:** GCC / MinGW (incluso nell'installazione dell'IDE)
+* **Configurazione Consigliata:** Impostare il compilatore per supportare lo standard **C++11** o superiore:
+  > *Strumenti (Tools) ➔ Opzioni del Compilatore (Compiler Options) ➔ Aggiungi i seguenti comandi quando si chiama il compilatore: `-std=c++11`*
+
+---
+
+## 📖 Manuale e Documentazione di Riferimento
+
+Il nostro principale punto di riferimento teorico e pratico per la sintassi del linguaggio sarà la guida di **W3Schools**:
+
+* 📘 **Guida Principale:** [W3Schools C++ Tutorial](https://www.w3schools.com/cpp/)
+* 📚 **Approfondimenti:** [CppReference (Italiano)](https://it.cppreference.com/)
+
+Consultate regolarmente la documentazione su W3Schools per verificare sintassi, esempi e funzioni integrate della libreria standard.
 
 ---
 
 ## 🗺️ Programma Didattico
 
-Il corso si articola nei seguenti moduli:
+Il percorso formativo dell'anno è suddiviso nei seguenti moduli:
 
 ### 🔹 Modulo 1: Fondamenti e Strutture di Controllo
-* Introduzione all'algoritmica e all'ambiente C++ (`iostream`, `std::cin`, `std::cout`).
-* Tipi di dato, variabili, costanti e operatori.
-* **Strutture di Selezione:** `if`, `if-else`, `switch-case`.
-* **Strutture Iterative:** Cicli `while`, `do-while`, `for`.
+* Struttura base di un programma C++ e flusso I/O (`iostream`, `cin`, `cout`).
+* Tipi di dato base, variabili, costanti e operatori aritmetici/logici.
+* **Selezione:** `if`, `else`, `switch-case`.
+* **Iterazione (Cicli):** `while`, `do-while`, `for`.
 
 ### 🔹 Modulo 2: Strutture Dati Lineari (Array e Matrici)
-* **Array Monodimensionali (Vettori):** Dichiarazione, scorrimento, inserimento, cancellazione.
-* **Algorithmi Fondamentali su Array:**
-  * Ricerca (Lineare e Binaria).
-  * Ordinamento (Bubble Sort, Selection Sort, Insertion Sort).
-* **Array Bidimensionali (Matrici):** Uso dei cicli annidati, manipolazione di righe/colonne e diagonali.
+* **Array Monodimensionali (Vettori):** Dichiarazione, inizializzazione, scorrimento e manipolazione degli elementi.
+* **Algoritmi Fondamentali:** Ricerca (sequenziale/binaria) e ordinamento (Bubble Sort, Selection Sort).
+* **Array Bidimensionali (Matrici):** Uso di cicli annidati, scansione per righe/colonne e diagonali.
 
-### 🔹 Modulo 3: Modularizzazione (Funzioni e Procedure)
-* Progettazione Top-Down e Bottom-Up.
-* Definizione e chiamata di funzioni.
+### 🔹 Modulo 3: Modularizzazione e Funzioni
+* Progettazione top-down e riuso del codice.
+* Definizione e chiamata di funzioni, valori di ritorno.
 * Passaggio dei parametri: **per valore** vs **per riferimento** (`&`).
-* Scope delle variabili (globali, locali, `static`).
-* Ricorsione (concetti base ed esempi).
+* Ambito (scope) delle variabili: locali e globali.
 
-### 🔹 Modulo 4: Stringhe e Gestione della Memoria
-* Differenza tra array di caratteri (C-strings) e `std::string`.
-* Manipolazione delle stringhe con le librerie standard.
-* Introduzione ai **Puntatori** e all'indirizzamento di memoria (`&`, `*`).
-* Allocazione dinamica base con `new` e `delete`.
+### 🔹 Modulo 4: Stringhe e Puntatori
+* Gestione dei testi: `std::string` e principali metodi associati.
+* Introduzione all'indirizzamento di memoria: operatori `&` (indirizzo) e `*` (dereferenziazione).
+* Puntatori e passaggio di indirizzi alle funzioni.
 
-### 🔹 Modulo 5: Tipi di Dato Definiti dall'Utente
-* **Strutture (`struct`):** Aggregazione di dati eterogenei.
-* Array di strutture.
-* Introduzione all'organizzazione dei file e alla compilazione separata (`.h` e `.cpp`).
+### 🔹 Modulo 5: Strutture Dati Personalizzate
+* Le Strutture (`struct`): aggregazione di dati eterogenei.
+* Vettori di strutture e gestione di piccoli archivi dati.
 
 ---
 
 ## 📂 Struttura della Repository
 
-La repository è organizzata in cartelle tematiche:
+La repository è organizzata in cartelle corrispondenti ai vari argomenti del corso:
 
 ```text
 3A_25-26/
 ├── 01_Fondamenti/
-│   ├── 01_InputOutput/
-│   └── 02_SelezioneIterazione/
+│   ├── InputOutput/
+│   └── Selezione_E_Iterazione/
 ├── 02_Array_e_Matrici/
-│   ├── 01_Array_1D/
-│   ├── 02_Ordinamento_Ricerca/
-│   └── 03_Matrici/
+│   ├── Array1D/
+│   ├── Ordinamento_E_Ricerca/
+│   └── Matrici/
 ├── 03_Funzioni/
-│   ├── 01_Parametri_Valore_Riferimento/
-│   └── 02_Ricorsione/
 ├── 04_Stringhe_e_Puntatori/
 ├── 05_Strutture/
-└── README.md# terze
+└── README.md
