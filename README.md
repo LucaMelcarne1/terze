@@ -31,7 +31,7 @@ In laboratorio e a casa utilizzeremo **Dev-C++** come ambiente di sviluppo integ
 
 Il nostro principale punto di riferimento teorico e pratico per la sintassi del linguaggio sarà la guida di **W3Schools**:
 
-* 📘 **Guida Principale:** [W3Schools C++ Tutorial](https://www.w3schools.com/cpp/)
+* 📘 **Guida Principale:** [Libro di testo - W3Schools C++ Tutorial](https://www.w3schools.com/cpp/)
 * 📚 **Approfondimenti:** [CppReference (Italiano)](https://it.cppreference.com/)
 
 Consultate regolarmente la documentazione su W3Schools per verificare sintassi, esempi e funzioni integrate della libreria standard.
